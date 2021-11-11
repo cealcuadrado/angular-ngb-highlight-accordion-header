@@ -1,5 +1,68 @@
-<p>layout works!</p>
+<section class="layout">
+  <ngb-accordion activeIds="disenoAcordeon" [destroyOnHide]="false" [closeOthers]="true" [type]="'success'">
+    <ngb-panel>
+      <ng-template ngbPanelHeader let-opened="opened">
+        <button class="btn btn-block p-2 text-white" ngbPanelToggle>
+          <span class="d-flex justify-content-between align-items-center">
+            <i class="fa fa-fw" [ngClass]="{'fa-plus':!opened, 'fa-minus':opened}"
+              [ngbTooltip]="opened ? 'Colapsar' : 'Abrir'" [placement]="'right'"></i>
+            <span>Panel 1</span>
+            <span></span>
+          </span>
+        </button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex mi, consectetur non fringilla eu, commodo
+          eget tortor. Nullam semper lacinia pharetra. Aliquam finibus diam ac gravida commodo. Nullam nec odio
+          venenatis
+          erat suscipit pulvinar eget eu nulla. Integer vel euismod purus. Maecenas luctus, tellus sit amet blandit
+          dictum, magna mi efficitur mauris, nec aliquet tellus justo in nulla. Pellentesque finibus nisi vitae mollis
+          cursus. Nullam euismod, ex quis efficitur fringilla, lacus risus facilisis odio, posuere semper magna lacus in
+          orci. Ut posuere finibus imperdiet. Aliquam sed eleifend velit. In hac habitasse platea dictumst.</p>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel>
+      <ng-template ngbPanelHeader let-opened="opened">
+        <button class="btn btn-block p-2 text-white" ngbPanelToggle>
+          <span class="d-flex justify-content-between align-items-center">
+            <i class="fa fa-fw" [ngClass]="{'fa-plus':!opened, 'fa-minus':opened}"
+              [ngbTooltip]="opened ? 'Colapsar' : 'Abrir'" [placement]="'right'"></i>
+            <span>Panel 2</span>
+            <span></span>
+          </span>
+        </button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex mi, consectetur non fringilla eu, commodo
+          eget tortor. Nullam semper lacinia pharetra. Aliquam finibus diam ac gravida commodo. Nullam nec odio
+          venenatis
+          erat suscipit pulvinar eget eu nulla. Integer vel euismod purus. Maecenas luctus, tellus sit amet blandit
+          dictum, magna mi efficitur mauris, nec aliquet tellus justo in nulla. Pellentesque finibus nisi vitae mollis
+          cursus. Nullam euismod, ex quis efficitur fringilla, lacus risus facilisis odio, posuere semper magna lacus in
+          orci. Ut posuere finibus imperdiet. Aliquam sed eleifend velit. In hac habitasse platea dictumst.</p>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel>
+      <ng-template ngbPanelHeader let-opened="opened">
+        <button class="btn btn-block p-2 text-white" ngbPanelToggle>
+          <span class="d-flex justify-content-between align-items-center">
+            <i class="fa fa-fw" [ngClass]="{'fa-plus':!opened, 'fa-minus':opened}"
+              [ngbTooltip]="opened ? 'Colapsar' : 'Abrir'" [placement]="'right'"></i>
+            <span>Panel 3</span>
+            <span></span>
+          </span>
+        </button>
+      </ng-template>
+      <ng-template ngbPanelContent>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex mi, consectetur non fringilla eu, commodo
+          eget tortor. Nullam semper lacinia pharetra. Aliquam finibus diam ac gravida commodo. Nullam nec odio
+          venenatis
+          erat suscipit pulvinar eget eu nulla. Integer vel euismod purus. Maecenas luctus, tellus sit amet blandit
+          dictum, magna mi efficitur mauris, nec aliquet tellus justo in nulla. Pellentesque finibus nisi vitae mollis
+          cursus. Nullam euismod, ex quis efficitur fringilla, lacus risus facilisis odio, posuere semper magna lacus in
+          orci. Ut posuere finibus imperdiet. Aliquam sed eleifend velit. In hac habitasse platea dictumst.</p>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>
+</section>
 
-<a href="#" ngbTooltip="Esto es un link">
-  Link
-</a>
